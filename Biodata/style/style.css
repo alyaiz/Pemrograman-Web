@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, #8AC07E, #73A069, #5C8054);
+}
+.container{
+    width: 900px;
+    /* background-color: rgb(255, 255, 255); */
+    margin: 50px auto 50px auto;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+    background-image: linear-gradient(to right, #ADF5BE, #B8FFA8, #A1E093);
+    border-radius: 30px;
+}
+
+.container h1{
+    text-align: center;
+    padding-top: 60px;
+    /* font-family: 'Fredoka One', cursive; */
+    letter-spacing: 4px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+section {
+    display: grid;
+    grid-template-areas: image nav-extra;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+section picture{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 100px;
+}
+
+section picture img{
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2)
+}
+
+
+section footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section footer .nav-extra{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 6px 20px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 40px;
+    /* background-color: rgb(255, 255, 255); */
+    /* margin-right: 70px; */
+    margin-right: 40px;
+    background-image: linear-gradient(to right, #8AC07E, #73A069, #5C8054);
+}
+
+section footer .nav-extra a{
+    margin-top: 7px;
+    color: rgba(0,0,0,0.5);
+}
+
+footer .nav-extra .instagram {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+footer .nav-extra .instagram:hover {
+    color: white;
+    /* background-color: linear-gradient(to right, red, blue); */
+    background-image: linear-gradient(
+      to right,
+      #405de6,
+      #5851db,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #fd1d1d
+    );
+    border-radius: 6px;
+}
+
+footer .nav-extra .github {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+footer .nav-extra .github:hover {
+    color: white;
+    background-image: linear-gradient(to right, #2d333a, #000000);
+    border-radius: 6px;
+}
+
+.container table{
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, #8AC07E, #73A069, #5C8054);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+

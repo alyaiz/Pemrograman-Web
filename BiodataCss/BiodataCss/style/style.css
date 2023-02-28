@@ -3,25 +3,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.container-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  position: fixed;
-  z-index: 9999;
-}
-
 nav {
-  min-width: 1240px;
+  width: 100%;
   background-color: #000000;
-  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   padding: 5px 7%;
   box-sizing: border-box;
   opacity: 65%;
+  position: fixed;
+  z-index: 9999;
 }
 
 .logo img {
@@ -29,7 +20,7 @@ nav {
 }
 
 .menu {
-  width: 200px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +94,7 @@ nav .menu a:hover {
 }
 
 .container-2 {
-  padding: 150px 200px 150px 200px;
+  padding: 150px;
   display: grid;
   grid-template-areas: "box-1 box-2";
   grid-template-columns: 0.4fr 0.6fr;
@@ -175,10 +166,73 @@ nav .menu a:hover {
 }
 
 .container-3 {
-  padding: 150px 200px 150px 200px;
+  padding: 150px;
 }
 
-.section-3 h1 {
+.container-3 h1 {
+  font-family: "Kanit", sans-serif;
+  font-size: 46px;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 75%;
+  text-align: center;
+}
+
+.container-3 span {
+  color: #e5273a;
+}
+
+.section-3 .box-family {
+  display: flex;
+  padding-top: 50px;
+}
+
+.box-family .box-fml {
+  background-color: #1e2131;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.box-fml .box-content {
+  background-color: #24253c;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.box-content i {
+  font-size: 60px;
+  color: #e5273a;
+}
+
+.box-content h2 {
+  font-size: 20px;
+  color: white;
+  padding-top: 5px;
+}
+
+.box-content h3 {
+  font-size: 15px;
+  color: white;
+  padding-top: 5px;
+}
+
+.section-4 {
+  background-color: #1e2131;
+}
+
+.container-4 {
+  padding: 150px;
+}
+
+.section-4 h1 {
   font-family: "Kanit", sans-serif;
   font-size: 46px;
   color: #ffffff;
@@ -186,7 +240,7 @@ nav .menu a:hover {
   text-align: center;
 }
 
-.section-3 h1 span {
+.section-4 h1 span {
   color: #e5273a;
 }
 
@@ -254,7 +308,7 @@ nav .menu a:hover {
 }
 
 footer {
-  background-color: #1e2131;
+  background-color: #24253c;
   color: #ffffff;
   padding: 20px;
   text-align: center;

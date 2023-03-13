@@ -1,5 +1,14 @@
 <?php
 include('connect.php');
+require('function.php');
+
+$customer = "SELECT * FROM customers";
+
+if (isset($_POST["search"])) {
+
+    $customer = searchCustomer($_POST["keyword"]);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,9 +37,9 @@ include('connect.php');
                         <a class="nav-link active" aria-current="page" href="products.php">Produtcs</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="d-flex" role="search" method="post">
+                    <input class="form-control me-2" name="keyword" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" name="search" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -59,8 +68,7 @@ include('connect.php');
             </thead>
             <tbody>
                 <?php
-                $query = "SELECT * FROM customers";
-                $result = mysqli_query(connection(), $query);
+                $result = mysqli_query(connection(), $customer);
                 ?>
 
                 <?php while ($data = mysqli_fetch_array($result)) : ?>

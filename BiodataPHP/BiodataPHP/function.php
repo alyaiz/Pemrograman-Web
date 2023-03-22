@@ -16,8 +16,8 @@ function age()
     echo $tahun." tahun ".$bulan." bulan ".$tanggal." hari";
 } 
 
-//untuk menampilkan biodata
-$biodata = [
+//array untuk menampilkan biodata
+$array = [
     "nama" => "Alya Izzah",
     "nohp" => "+6285232247252",
     "hobi" => "Basket",
@@ -25,4 +25,4 @@ $biodata = [
     "alamat" => "Tuban, Jatim",
     "agama" => "Islam",
     "status" => "Belum Menikah"
-];?>
+];

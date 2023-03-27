@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <form class="container" action="" method="post" enctype="multipart/form-data">
       <div class="mb-3">
         <label for="productCode" class="form-label">Product Code</label>
-        <input type="text" class="form-control" name="productCode" id="ProductCode" placeholder="Enter Product Code">
+        <input type="text" class="form-control" name="productCode" id="productCode" placeholder="Enter Product Code">
       </div>
       <div class="mb-3">
         <label for="productName" class="form-label">Product Name</label>

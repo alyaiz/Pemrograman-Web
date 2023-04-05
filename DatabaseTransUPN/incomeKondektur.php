@@ -5,7 +5,7 @@ include('function.php');
 $kondektur = "SELECT b.id_kondektur, b.nama,t.`jumlah_km`, tanggal,SUM(t.jumlah_km * 1500) AS gaji
                     FROM kondektur b
                     JOIN trans_upn t ON b.id_kondektur = t.id_kondektur
-                    GROUP BY b.id_kondektur";
+                    GROUP BY b.id_kondektur, tanggal";
 
 $result = mysqli_query(connection(), $kondektur);
 

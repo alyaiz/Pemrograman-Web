@@ -5,7 +5,7 @@ include('function.php');
 $driver = "SELECT b.id_driver, b.nama, b.no_sim, b.alamat,t.jumlah_km, t.tanggal, SUM(t.jumlah_km * 3000) AS gaji
             FROM driver b
             JOIN trans_upn t ON b.id_driver = t.id_driver
-            GROUP BY b.id_driver;";
+            GROUP BY b.id_driver, tanggal;";
 
 $result = mysqli_query(connection(), $driver);
 
